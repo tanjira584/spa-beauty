@@ -182,6 +182,88 @@ a {
 
 
 
+/*-------------------------------------------
+                Footer Section
+---------------------------------------------*/
+.footer {
+	background: black;
+	padding: 100px 0;
+	color: #FFF;
+}
+
+.footer-row{
+	display: grid;
+    grid-template-columns: 3fr 3fr 4fr 4fr;
+}
+.site-logo {
+	margin: 0px 16px;
+}
+.site-logo p {
+	margin-top: 20px;
+	font-size: 14px;
+	line-height: 1.6em;
+}
+.footer-contact {
+	margin: 0px 16px;
+}
+.footer-contact h3 {
+	text-transform: uppercase;
+	font-size: 26px;
+	font-weight: normal;
+	margin-bottom: 20px;
+}
+.footer-contact p {
+	font-size: 14px;
+	line-height: 1.6em;
+	margin-bottom: 8px;
+}
+.footer-contact a {
+	color: #faa392;
+}
+.footer-post {
+	margin: 0px 16px;
+}
+.footer-post h3 {
+	text-transform: uppercase;
+	font-size: 26px;
+	font-weight: normal;
+	margin-bottom: 20px;
+}
+.footer-post ul {
+	list-style: none;
+}
+.footer-post li {
+	margin-bottom: 10px;
+}
+.footer-post li h6 {
+	font-size: 16px;
+	font-weight: normal;
+	line-height: 1.6em;
+}
+.footer-post li p {
+	font-size: 14px;
+	font-style: italic;
+	color: #CCCCCC;
+}
+.footer-gall {
+	display: grid;
+	grid-template-columns: auto auto auto;
+	grid-column-gap: 6px;
+	margin: 0 16px;
+}
+.img1 img {
+	width: 100%;
+	margin-bottom: 2px;
+}
+.img2 img {
+	width: 100%;
+	margin-bottom: 2px;
+}
+.img3 img {
+	width: 100%;
+	margin-bottom: 2px;
+}
+
 
 /*-----------------------------------------------
                     Media For 1024px
@@ -227,6 +309,28 @@ a {
 	.toggle-btn {
 		display: block;
 	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /*------footer ------*/
+    .footer-row {
+        grid-template-columns: 1fr 1fr;
+    }
+    .site-logo,
+    .footer-contact {
+        margin-bottom: 40px;
+    }
 }
 
 
@@ -244,6 +348,26 @@ a {
 	}
     .logo img {
         width: 160px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /*------footer ------*/
+    .footer-row {
+        grid-template-columns: 1fr;
+    }
+    .footer-post {
+        margin-bottom: 40px;
     }
 }
 
