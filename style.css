@@ -1,3 +1,257 @@
-h1 {
-    color: red;
+/*-------------------------
+
+Template Name: Spa And Beauty Center;
+Template URI:http://tanjira584.github.io/spa-beauty/;
+Author Name:Tanjir Ahmed;
+Author URI: http://tanjir.com;
+Description: As well as providing you with a relaxing thermal spa experience, we leave you feeling pampered and looking great.;
+Licence: 
+Licence URI:
+Verson:1.0;
+
+---------------------------
+
+	1. Typography
+	2. Header
+		2.1 Logo;
+		2.2 Main Menu;
+
+---------------------------*/
+
+/*--------------Common Css Style-----------*/
+@font-face{
+	font-family:'havilon';
+	src:url('fonts/haviland.woff');
 }
+
+*{
+	margin:0px;
+	padding:0px;
+	box-sizing:border-box;
+	font-family:Sans-serif;
+}
+.container{
+	width:90%;
+	margin:auto;
+}
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+/*-------------------------------------------
+                Top Header
+---------------------------------------------*/
+.top-header {
+	background: #f7f7f7;
+}
+.top-header-row{
+	display: flex;
+    align-items: centers;
+    justify-content: space-between;
+}
+.social-icon {
+	text-align: right;
+	margin-right: 16px;
+}
+.social-icon:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+.social-icon ul {
+	float: right;
+	list-style: none;
+}
+.social-icon ul li {
+	display: inline;
+	margin-left: 0px;
+}
+.social-icon ul li i {
+	font-size: 12px;
+	padding: 10px;
+}
+.social-icon ul li:last-child i {
+	background: #f9a392;
+	color: #FFF;
+}
+.social-icon ul li:last-child i:hover {
+	background: #8ed4cc;
+}
+.social-icon span {
+	display: inline-block;
+	padding-left: 14px;
+	font-size: 12px;
+	margin-top: 10px;
+}
+.contact-info{
+	margin-left: 16px;
+}
+.contact-info span {
+	display: inline-block;
+	margin-top: 10px;
+	font-size: 12px;
+	padding-right: 10px;
+}
+.contact-info span:last-child {
+	padding-right:0;
+}
+/*-------------------------------------------
+                Main Header
+---------------------------------------------*/
+.main-header {
+	position: relative;
+	padding: 16px 0;
+	box-shadow: 0px 8px 13px 0px rgba(0,0,0,0.15);
+}
+.main-header-row {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.logo {
+	margin-left: 16px;
+}
+.logo img {
+	width: 250px;
+	height: auto;
+}
+.menu ul {
+	list-style: none;
+}
+.menu ul li {
+	display: inline;
+	margin-left: 8px;
+}
+.menu ul li a {
+	text-transform: uppercase;
+	color: #000;
+	font-size: 14px;
+	font-weight: bold;
+	padding: 10px 16px;
+	transition: 0.5s all;
+}
+.menu ul li:hover a {
+	color: #f9a392;
+}
+.menu ul li.active a {
+	color: #f9a392;
+}
+.toggle-btn {
+	display: none;
+	margin-right: 6px;
+}
+.toggle-btn i {
+	display: inline-block;
+	font-size: 27px;
+	padding: 10px;
+	color: #f9a392;
+}
+
+
+
+
+
+
+
+/*-------------------------------------------
+
+---------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-----------------------------------------------
+                    Media For 1024px
+--------------------------------------------------*/
+@media screen and (max-width:1024px){
+	.container{
+		width:100%;
+	}
+    /*---------Main Header-----*/
+    .menu {
+		position: absolute;
+		top: 100%;
+		left: 0;
+		width: 100%;
+		background: green;
+		max-height: 0;
+		overflow: hidden;
+		transition: 0.5s all;
+	}
+	.menu.mobile-menu {
+		max-height: 240px;
+	}
+	.menu ul li {
+		display: block;
+		margin-left: 0;
+	}
+	.menu ul li a {
+		width: 100%;
+		padding: 16px 16px;
+	}
+	.menu ul li:hover {
+		background: #f9a392;
+	}
+	.menu ul li:hover a {
+		color: #FFF;
+	}
+	.menu ul li.active {
+		background: #f9a392;
+	}
+	.menu ul li.active a {
+		color: #FFF;
+	}
+	.toggle-btn {
+		display: block;
+	}
+}
+
+
+
+/*-----------------------------------------------
+                    Media For 768px
+--------------------------------------------------*/
+@media screen and (max-width:768px){
+	/*--------Top Header--------*/
+    .contact-info span:last-child {
+		display: none;
+	}
+	.social-icon span:last-child {
+		display: none;
+	}
+    .logo img {
+        width: 160px;
+    }
+}
+
+
+/*-----------------------------------------------
+                    Media For 540px
+--------------------------------------------------*/
+@media screen and (max-width:540px){
+	
+}
+
