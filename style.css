@@ -503,6 +503,82 @@ a {
 	font-weight: normal;
 	line-height: 1.4em;
 }
+/*-------------------------------------------
+                Latest News
+---------------------------------------------*/
+.latest-news {
+	padding: 100px 0;
+	background: #f8f8f8;
+}
+.news-info {
+	text-align: center;
+}
+.news-info h3 {
+	font-size: 30px;
+    font-family: havilon;
+    font-weight: normal;
+    text-align: center;
+    color: #faa392;
+    margin-bottom: 10px;
+}
+.news-info h2 {
+	font-size: 40px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 1.5px;
+    line-height: 1.4em;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+.latest-news-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.news-box {
+	margin: 0 16px;
+}
+.news-box .news {
+	padding: 20px;
+	background: #FFF;
+	border-bottom: 2px solid #faa392;
+}
+.news-box .news h6 {
+	text-transform: uppercase;
+	color: #f9a392;
+	margin-top: 10px;
+}
+.news-box .news h3 {
+	text-transform: uppercase;
+	font-weight: normal;
+	line-height: 1.4em;
+	margin-top: 10px;
+}
+.news-box .news p {
+	font-style: italic;
+	line-height: 1.6em;
+	margin-top: 30px;
+	color: #919191;
+}
+.all-post-btn {
+	text-align: center;
+}
+.all-post-btn a {
+    text-transform: uppercase;
+    padding: 15px 30px;
+    color: #faa392;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    border: 2px solid #faa392;
+    border-radius: 2px;
+    margin-top: 30px;
+    transition: 0.5s;
+}
+.all-post-btn a:hover {
+	background: #faa392;
+	color: #FFF;
+}
+
 
 
 
@@ -701,14 +777,19 @@ a {
         left: -60px;
         top: 25px;
     }
-    .open-blog .blog-box h1 {
-
-    }
     .open-blog .blog-box h4 {
         font-size: 22px;
     }
-
-
+    /*--------Latest News ---------*/
+    .latest-news-row {
+        grid-template-columns: 1fr 1fr;
+    }
+    .news-box .news img {
+		width: 100%;
+	}
+	.news-box .news {
+		margin-bottom: 40px;
+	}
 
 
 
@@ -823,6 +904,13 @@ a {
     }
     /*------------Openning Time-------*/
     .opening-row {
+        grid-template-columns: 1fr;
+    }
+    /*--------Latest News ---------*/
+    .news-info h2 {
+        font-size: 32px;
+    }
+    .latest-news-row {
         grid-template-columns: 1fr;
     }
 	
