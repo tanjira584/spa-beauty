@@ -632,15 +632,18 @@ a {
 	background: #FFF;
 	color: #8ed4cc;
 }
-/*----------Home Product------*/
-.home-product{
-	padding:100px 0;
-	background:#f8f8f8;
+
+/*-------------------------------------------
+                Our Product Section
+---------------------------------------------*/
+.home-product {
+	padding: 100px 0;
+	background: #f8f8f8;
 }
-.product-info{
-	text-align:center;
+.product-info {
+	text-align: center;
 }
-.product-info h3{
+.product-info h3 {
 	font-size: 30px;
     font-family: havilon;
     font-weight: normal;
@@ -648,7 +651,7 @@ a {
     color: #faa392;
     margin-bottom: 10px;
 }
-.product-info h2{
+.product-info h2 {
 	font-size: 40px;
     text-transform: uppercase;
     text-align: center;
@@ -657,151 +660,93 @@ a {
     font-weight: normal;
     margin-bottom: 10px;
 }
-.product-row{
-	overflow:hidden;
+.product-row {
+	display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
 	margin-top:40px;
 }
-.product-row .col-3{
-	width:25%;
-	float:left;
-	overflow:hidden;
+.product-box {
+	margin: 0 16px;
 }
-.product-box{
-	margin:0 16px;
+.product-box .product {
+	text-align: center;
 }
-.product-box .product{
-	text-align:center;
+.product-box .product h6 {
+	text-transform: uppercase;
+	color: #f9a392;
+	margin-top: 10px;
 }
-.product-box .product h6{
-	text-transform:uppercase;
-	color:#f9a392;
-	margin-top:10px;
+.product-box .product h4 {
+	text-transform: uppercase;
+	font-weight: normal;
+	font-size: 15px;
+	line-height: 1.4em;
+	margin-top: 10px;
 }
-.product-box .product h4{
-	text-transform:uppercase;
-	font-weight:normal;
-	font-size:15px;
-	line-height:1.4em;
-	margin-top:10px;
+.product-box .product p {
+	font-style: italic;
+	line-height: 1.6em;
+	font-size: 18px;
+	margin-top: 10px;
+	color: #919191;
 }
-.product-box .product p{
-	font-style:italic;
-	line-height:1.6em;
-	font-size:18px;
-	margin-top:10px;
-	color:#919191;
-}
-/*---------Special Offers--------*/
-.special-offer{
-	
-	background:url('images/back-hot.jpg');
-	background-size:cover;
-	background-repeat:no-repeat;
-	background-position:center center;
-}
-.special-overlay{
-	padding:100px 0;
-	background-color: rgba(0,0,0,0.35);
-}
-
-.special-offer .offer{
-	display:flex;
-	flex-direction:column;
-	justify-content:cener;
-	align-items:center;
-}
-.special-offer .offer h2{
-	font-family:havilon;
-	font-size:3.77em;
-	letter-spacing:0.5px;
-	line-height:1.4em;
-	font-weight:normal;
-	color:#FFF;
-}
-.special-offer .offer h1{
-	font-size:44px;
-	margin:0px;
-	margin-bottom:20px;
-	font-weight:normal;
-	text-transform:uppercase;
-	color:#FFF;
-}
-.special-offer .offer h6{
-	font-size:18px;
-	font-weight:normal;
-	color:#FFF;
-}
-.special-offer .offer a{
-	display:inline-block;
-	margin-top:20px;
-	text-decoration:none;
-	text-transform:uppercase;
-	font-size:14px; 
-	font-weight:bold;
-	letter-spacing:1px;
-	padding:20px 50px;
-	background:#faa392;
-	color:#FFF;
-	border-radius:2px;
-}
-.special-offer .offer a:hover{
-	background:#FFF;
-	color:#faa392;
-}
-
-
-
-
 
 /*-------------------------------------------
-
+                Special Offer
 ---------------------------------------------*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.special-offer {
+	background: url('images/back-hot.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+.special-overlay {
+	padding: 100px 0;
+	background-color: rgba(0,0,0,0.35);
+}
+.special-offer .offer {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.special-offer .offer h2 {
+	font-family: havilon;
+	font-size: 3.77em;
+	letter-spacing: 0.5px;
+	line-height: 1.4em;
+	font-weight: normal;
+	color: #FFF;
+}
+.special-offer .offer h1 {
+	font-size: 44px;
+	margin: 0px;
+	margin-bottom: 20px;
+    text-align: center;
+	font-weight: normal;
+	text-transform: uppercase;
+	color: #FFF;
+}
+.special-offer .offer h6 {
+	font-size: 18px;
+	font-weight: normal;
+	color: #FFF;
+}
+.special-offer .offer a {
+	margin-top: 20px;
+	text-transform: uppercase;
+	font-size: 14px; 
+	font-weight: bold;
+	letter-spacing: 1px;
+	padding: 20px 50px;
+	background: #faa392;
+	color: #FFF;
+	border-radius: 2px;
+}
+.special-offer .offer a:hover {
+	background: #FFF;
+	color: #faa392;
+}
 /*-------------------------------------------
                 Footer Section
 ---------------------------------------------*/
@@ -883,8 +828,6 @@ a {
 	width: 100%;
 	margin-bottom: 2px;
 }
-
-
 /*-----------------------------------------------
                     Media For 1024px
 --------------------------------------------------*/
@@ -965,14 +908,13 @@ a {
 	.popular-content h2 {
 		font-size: 26px;
 	}
-
-
-
-
-
-
-
-
+    /*---------Our Product----------*/
+    .product-row {
+        grid-template-columns: 1fr 1fr;
+    }
+    .product-box {
+        margin-bottom: 40px;
+    }
     /*------footer ------*/
     .footer-row {
         grid-template-columns: 1fr 1fr;
@@ -982,8 +924,6 @@ a {
         margin-bottom: 40px;
     }
 }
-
-
 
 /*-----------------------------------------------
                     Media For 768px
@@ -1046,16 +986,6 @@ a {
 		margin: 16px;
 	}
 
-
-
-
-
-
-
-
-
-
-
     /*------footer ------*/
     .footer-row {
         grid-template-columns: 1fr;
@@ -1070,6 +1000,10 @@ a {
                     Media For 540px
 --------------------------------------------------*/
 @media screen and (max-width:540px){
+    /*-----Top Headfer-----*/
+    .top-header {
+        display: none;
+    }
     /*-----service section---------*/
     .service-box {
         grid-template-columns: 1fr;
@@ -1092,6 +1026,26 @@ a {
     }
     .latest-news-row {
         grid-template-columns: 1fr;
+    }
+    /*---------Our Product----------*/
+    .product-info h2 {
+        font-size: 32px;
+    }
+    .product-row {
+        grid-template-columns: 1fr;
+    }
+    .product-box:last-of-type {
+        margin-bottom: 0px;
+    }
+    /*--------special Offer-----*/
+    .special-offer .offer h1 {
+        font-size: 30px;
+    }
+    .special-offer .offer h6 {
+        text-align: center;
+    }
+    .special-offer .offer {
+        margin: 0 16px;
     }
 	
 }
