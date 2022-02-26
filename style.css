@@ -316,6 +316,70 @@ a {
 	background-repeat:no-repeat;
 	background-position:center center;
 }
+/*-------------------------------------------
+                Service Section
+---------------------------------------------*/
+.services-row {
+	display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.services-area .women-img img{
+	width:100%;
+	height:auto;
+}
+.service-box {
+	display: grid;
+	grid-template-columns: auto auto;
+	width: 100%;
+	height: 100%;
+}
+.p-therapy,
+.m-therapy,
+.b-therapy,
+.s-therapy {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	padding: 30px;
+	border-bottom: 1px solid silver;
+	border-right: 1px solid silver;
+}
+.p-therapy i,
+.m-therapy i,
+.b-therapy i,
+.s-therapy i{
+	font-size: 40px;
+	margin-bottom: 10px;
+}
+.p-therapy h5,
+.m-therapy h5,
+.b-therapy h5,
+.s-therapy h5{
+	font-size: 20px;
+	margin-bottom: 5px;
+	font-weight: normal;
+	line-height: 1.4em;
+}
+.divider{
+	width: 80px;
+	height: 1px;
+	background: silver;
+	margin-bottom: 10px
+}
+.p-therapy p,
+.m-therapy p,
+.b-therapy p,
+.s-therapy p{
+	line-height: 1.6em;
+}
+
+
+
+
+
+
 
 /*-------------------------------------------
 
@@ -473,7 +537,13 @@ a {
 	.toggle-btn {
 		display: block;
 	}
-
+    /*---------------Service-----*/
+	.services-row {
+		display: inherit;
+	}
+	.women-img {
+		display:none;
+	}
 
 
 
@@ -567,6 +637,10 @@ a {
                     Media For 540px
 --------------------------------------------------*/
 @media screen and (max-width:540px){
+    /*-----service section---------*/
+    .service-box {
+        grid-template-columns: 1fr;
+    }
 	
 }
 
