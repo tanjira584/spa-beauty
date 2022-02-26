@@ -413,7 +413,96 @@ a {
 	background: #FFF;
 	color: #faa392;
 }
-
+/*-------------------------------------------
+                Opening Time
+---------------------------------------------*/
+.opening-time {
+	padding: 50px 0;
+}
+.opening-row{
+	display: grid;
+    grid-template-columns: 3fr 4fr 3fr;
+}
+.opening-time .open-img {
+	z-index: -1;
+}
+.opening-time .open-img img {
+	width: 100%;
+	z-index: -1;
+}
+.time {
+	padding: 16px;
+}
+.opening-time .time h3 {
+	font-size: 32px;
+	text-transform: uppercase;
+	font-weight:normal;
+	margin-bottom:16px;
+}
+.opening-time .time p {
+	line-height: 1.6em;
+	margin-bottom: 16px;
+}
+.opening-time .time ul {
+	list-style: none;
+}
+.opening-time .time ul li {
+	display: block;
+	margin: 10px 0;
+}
+.opening-time .time ul li i {
+	margin-right: 6px;
+	color: #faa392;
+}
+.opening-time .time a {
+	text-transform: uppercase;
+	padding: 10px 20px;
+	color: #faa392;
+	font-size: 14px;
+	font-weight: bold;
+	letter-spacing: 0.5px;
+	border: 2px solid #faa392;
+	border-radius: 2px;
+	margin-top: 16px;
+	transition: 0.5s all;
+}
+.opening-time .time a:hover {
+	background: #faa392;
+	color: #FFF;
+}
+.open-blog {
+	position: relative;
+	margin: 16px;
+}
+.open-blog .blog-box {
+	position: relative;
+	padding: 50px;
+	left: -60px;
+	background: #FFF;
+	top: 50px;
+	width: 100%;
+	z-index: 9999;
+}
+.open-blog .blog-box h1 {
+	position: absolute;
+	top: 0;
+	right: 50px;
+	display: inline;
+	font-size: 10em;
+	margin: 0;
+	opacity: 0.1;
+}
+.open-blog .blog-box p {
+	font-style: italic;
+	color: #666666;
+	margin-bottom: 10px;
+}
+.open-blog .blog-box h4 {
+	font-size: 24px;
+	text-transform: uppercase;
+	font-weight: normal;
+	line-height: 1.4em;
+}
 
 
 
@@ -423,6 +512,26 @@ a {
 /*-------------------------------------------
 
 ---------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -583,8 +692,21 @@ a {
 	.women-img {
 		display:none;
 	}
+    /*------------Openning Time-------*/
+    .opening-row {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .open-blog .blog-box {
+        padding: 40px;
+        left: -60px;
+        top: 25px;
+    }
+    .open-blog .blog-box h1 {
 
-
+    }
+    .open-blog .blog-box h4 {
+        font-size: 22px;
+    }
 
 
 
@@ -649,7 +771,18 @@ a {
     .cards:not(:last-of-type) {
         margin-bottom: 50px;
     }
-
+    /*------------Openning Time-------*/
+    .opening-row {
+        grid-template-columns: 1fr 1fr;
+    }
+    .open-img {
+        display: none;
+    }
+    .open-blog .blog-box {
+        padding: 40px;
+        left: 0px;
+        top: 0px;
+    }
 
 
 
@@ -687,6 +820,10 @@ a {
     .contact-box .box h2,
     .contact-box .box h2:first-child {
         font-size: 26px;
+    }
+    /*------------Openning Time-------*/
+    .opening-row {
+        grid-template-columns: 1fr;
     }
 	
 }
