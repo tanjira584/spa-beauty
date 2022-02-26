@@ -578,8 +578,176 @@ a {
 	background: #faa392;
 	color: #FFF;
 }
+/*-------------------------------------------
+                Popular Service
+---------------------------------------------*/
+.popular-service {
+	background: url('images/masseur.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+.popular-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.popular-content {
+	margin: 0 16px;
+	padding: 50px;
+	background: #8ed4cc;
+}
+.popular-content h2 {
+	font-size: 36px;
+    font-weight: normal;
+    color: #FFF;
+    line-height: 1.4em;
+    margin-bottom: 10px;
+}
+.popular-content p {
+	line-height: 1.6em;
+	margin-bottom: 10px;
+	letter-spacing: 0.5px;
+	color: #FFF;
+}
 
+.popular-content h4 {
+	font-style: italic;
+	padding: 18px 0;
+	line-height: 1.4em;
+	font-weight: 500px;
+	border-bottom: 1px solid #f7f7f7;
+	color: #FFF;
+}
+.popular-content a{
+	text-transform: uppercase;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 15px 30px;
+	color: #FFF;
+	border: 1px solid #FFF;
+	margin-top: 16px;
+	transition: 0.5s all;
+}
+.popular-content a:hover {
+	background: #FFF;
+	color: #8ed4cc;
+}
+/*----------Home Product------*/
+.home-product{
+	padding:100px 0;
+	background:#f8f8f8;
+}
+.product-info{
+	text-align:center;
+}
+.product-info h3{
+	font-size: 30px;
+    font-family: havilon;
+    font-weight: normal;
+    text-align: center;
+    color: #faa392;
+    margin-bottom: 10px;
+}
+.product-info h2{
+	font-size: 40px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 1.5px;
+    line-height: 1.4em;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+.product-row{
+	overflow:hidden;
+	margin-top:40px;
+}
+.product-row .col-3{
+	width:25%;
+	float:left;
+	overflow:hidden;
+}
+.product-box{
+	margin:0 16px;
+}
+.product-box .product{
+	text-align:center;
+}
+.product-box .product h6{
+	text-transform:uppercase;
+	color:#f9a392;
+	margin-top:10px;
+}
+.product-box .product h4{
+	text-transform:uppercase;
+	font-weight:normal;
+	font-size:15px;
+	line-height:1.4em;
+	margin-top:10px;
+}
+.product-box .product p{
+	font-style:italic;
+	line-height:1.6em;
+	font-size:18px;
+	margin-top:10px;
+	color:#919191;
+}
+/*---------Special Offers--------*/
+.special-offer{
+	
+	background:url('images/back-hot.jpg');
+	background-size:cover;
+	background-repeat:no-repeat;
+	background-position:center center;
+}
+.special-overlay{
+	padding:100px 0;
+	background-color: rgba(0,0,0,0.35);
+}
 
+.special-offer .offer{
+	display:flex;
+	flex-direction:column;
+	justify-content:cener;
+	align-items:center;
+}
+.special-offer .offer h2{
+	font-family:havilon;
+	font-size:3.77em;
+	letter-spacing:0.5px;
+	line-height:1.4em;
+	font-weight:normal;
+	color:#FFF;
+}
+.special-offer .offer h1{
+	font-size:44px;
+	margin:0px;
+	margin-bottom:20px;
+	font-weight:normal;
+	text-transform:uppercase;
+	color:#FFF;
+}
+.special-offer .offer h6{
+	font-size:18px;
+	font-weight:normal;
+	color:#FFF;
+}
+.special-offer .offer a{
+	display:inline-block;
+	margin-top:20px;
+	text-decoration:none;
+	text-transform:uppercase;
+	font-size:14px; 
+	font-weight:bold;
+	letter-spacing:1px;
+	padding:20px 50px;
+	background:#faa392;
+	color:#FFF;
+	border-radius:2px;
+}
+.special-offer .offer a:hover{
+	background:#FFF;
+	color:#faa392;
+}
 
 
 
@@ -790,7 +958,13 @@ a {
 	.news-box .news {
 		margin-bottom: 40px;
 	}
-
+    /*-------Popular Service--------*/
+	.popular-content {
+		padding: 26px;
+	}
+	.popular-content h2 {
+		font-size: 26px;
+	}
 
 
 
@@ -864,7 +1038,13 @@ a {
         left: 0px;
         top: 0px;
     }
-
+    /*--------Popular Service------*/
+	.popular-row {
+		grid-template-columns: 1fr;
+	}
+	.popular-content {
+		margin: 16px;
+	}
 
 
 
