@@ -146,7 +146,59 @@ a {
 	padding: 10px;
 	color: #f9a392;
 }
+/*-------------------------------------------
+                Home Section
+---------------------------------------------*/
+.home-area {
+	padding: 200px 0;
+	background: url('images/home-bg.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
 
+.home-area .home {
+	display: flex;
+	flex-direction: column;
+	justify-content: cener;
+	align-items: center;
+}
+.home-area .home h2 {
+	font-family: havilon;
+	font-size: 3.77em;
+	letter-spacing: 0.5px;
+	line-height: 1.4em;
+	font-weight: normal;
+	color: #FFF;
+}
+.home-area .home h1 {
+	font-size: 44px;
+	margin: 0px;
+	margin-bottom: 20px;
+	font-weight: normal;
+	text-transform: uppercase;
+	color: #FFF;
+}
+.home-area .home h6 {
+	font-size: 18px;
+	font-weight: normal;
+	color: #FFF;
+}
+.home-area .home a {
+	margin-top: 20px;
+	text-transform: uppercase;
+	font-size: 14px; 
+	font-weight: bold;
+	letter-spacing: 1px;
+	padding: 20px 50px;
+	background: #faa392;
+	color: #FFF;
+	border-radius: 2px;
+}
+.home-area .home a:hover {
+	background: #FFF;
+	color: #faa392;
+}
 
 
 
@@ -348,6 +400,17 @@ a {
 	}
     .logo img {
         width: 160px;
+    }
+	/*-----------Home-------*/
+    .home-area {
+        padding: 100px 0;
+    }
+	.home-area .home {
+		text-align: center;
+        margin: 0 16px;
+	}
+    .home-area .home h2 {
+        font-size: 3em;
     }
 
 
